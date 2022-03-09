@@ -1,6 +1,9 @@
 package;
 
+#if cpp
 import cpp.abi.Abi;
+#end
+
 import flixel.graphics.FlxGraphic;
 import flixel.FlxCamera;
 import flixel.addons.plugin.taskManager.FlxTask;
@@ -24,7 +27,9 @@ import flixel.tweens.FlxTween;
 import flixel.tweens.misc.ColorTween;
 import flixel.util.FlxStringUtil;
 import lime.utils.Assets;
+#if windows
 import Discord.DiscordClient;
+#end
 
 using StringTools;
 /*

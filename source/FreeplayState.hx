@@ -14,7 +14,9 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxStringUtil;
 import lime.utils.Assets;
 
+#if windows
 import Discord.DiscordClient;
+#end
 
 using StringTools;
 

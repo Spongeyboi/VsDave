@@ -14,7 +14,9 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import io.newgrounds.NG;
 import lime.app.Application;
+#if windows
 import Discord.DiscordClient;
+#end
 
 using StringTools;
 
@@ -68,7 +70,9 @@ class MainMenuState extends MusicBeatState
 			FlxG.save.data.eyesores = true;
 		}
 
+		#if windows
 		DiscordClient.changePresence("In the Menus", null);
+		#end
 
 		if (FlxG.save.data.unlockedcharacters == null)
 		{
