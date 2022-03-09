@@ -79,7 +79,9 @@ class FreeplayState extends MusicBeatState
 			}
 		 */
 		 
+		#if windows
 		DiscordClient.changePresence("In the Freeplay Menu", null);
+		#end
 
 		var isDebug:Bool = false;
 
